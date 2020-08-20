@@ -1,1 +1,1 @@
-# [GO](https://gsiekaniec.github.io/)
+# [Page](https://gsiekaniec.github.io/)
