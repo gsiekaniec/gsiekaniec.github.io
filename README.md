@@ -1,3 +1,1 @@
-# Grégoire Siekanie page
-
-## [Page](https://gsiekaniec.github.io/)
+# [GO](https://gsiekaniec.github.io/)
