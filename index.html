@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<title>Grégoire Siekaniec</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/9133fd7f61.js" crossorigin="anonymous"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.texte-illustration {
+    overflow: hidden; /* empêche le dépassement des flottants */
+}
+.texte-illustration .illus-gauche {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+.texte-illustration .illus-droite {
+    float: right;
+    margin: 5px 0 5px 20px;
+}
+.texte-illustration p {
+    overflow: hidden; /* Contexte de formatage. Force le paragraphe à
+    adapter sa largeur aux flottants adjacents. */
+}
+.texte-illustration hr {
+    overflow: hidden; 
+}
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <h1><b>GS</b></h1>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT ME</p>
+  <a href="#paper" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-pencil-alt w3-xxlarge"></i>
+    <p>SCIENTIFIC PAPERS</p>
+  </a>
+  <a href="#git" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-power-off w3-xxlarge"></i>
+    <p>INFO</p>
+  </a>
+  <a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-chalkboard-teacher w3-xxlarge"></i>
+    <p>TEACHING</p>
+  </a>
+  <a href="#vulgarisation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>POPULAR SCIENCE</p>
+  </a>
+  <a href="#sports" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-basketball-ball w3-xxlarge"></i>
+    <p>SPORTS</p>
+  </a>
+  <a href="#animals" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fas fa-paw w3-xxlarge"></i>
+    <p>ANIMAL</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#paper" class="w3-bar-item w3-button" style="width:25% !important">PAPER</a>
+    <a href="#git" class="w3-bar-item w3-button" style="width:25% !important">INFO</a>
+    <a href="#teaching" class="w3-bar-item w3-button" style="width:25% !important">TEACHING</a>
+    <a href="#vulgarisation" class="w3-bar-item w3-button" style="width:25% !important">POPULAR</a>
+    <a href="#sports" class="w3-bar-item w3-button" style="width:25% !important">SPORTS</a>
+    <a href="#animals" class="w3-bar-item w3-button" style="width:25% !important">ANIMALS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+	<h1 class="w3-jumbo"><b>Grégoire Siekaniec</b></h1>
+	<hr>
+	<p>Phd Student in Bioinformatics</p>
+	<hr>
+	<img class="illus-gauche" src="img/Gregoire.jpg" alt="Gregoire" class="w3-image" width="40%" height="auto" />
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My thesis project</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am a PhD student in bioinformatics. I am currently carrying out a thesis entitled "Differential characterization of strains of a bacterial species" with strains of the bacterium Streptococcus thermophilus. My professional project is to work in fields like genomics, transcriptomics or/and metagenomics. The ultimate goal of my thesis is to allow rapid identification of bacterial strains using the MinION sequencer from Oxford Nanopore. In general, I am interested in many scientific subjects and in particular subjects relating to extremophilic organisms and microorganisms.
+    </p>
+    <hr style="width:200px" class="w3-opacity">
+    <p>For more details on my scientific and professional background you can download my resume: </p>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="./CV/CV.pdf"><i class="fa fa-download"></i>  Resume  </button></a>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Paper Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="paper">
+     <h2 class="w3-text-light-grey">Scientific paper</h2>
+     <hr style="width:200px" class="w3-opacity">
+     <p>I'm working on filling this part, wait for it !
+     </p>
+  <!-- End Paper Section -->
+  </div>
+
+  <!-- Info Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="git">
+     <h2 class="w3-text-light-grey">Informatics</h2>
+     <hr style="width:200px" class="w3-opacity">
+     <p> My thesis projects can be found on my github :</p> <h3><a href="https://github.com/gsiekaniec"><i class="fab fa-github"></i></a></h3>
+  <!-- End Info Section -->
+  </div>
+
+  <!-- Teaching Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="teaching">
+     <h2 class="w3-text-light-grey">Teaching</h2>
+     <hr style="width:200px" class="w3-opacity">
+     <h3 class="w3-text-light-grey">2018-2019:</h3>
+     <p><ul>
+       <li>TP Python - License L1 Biologie: 24h</li>
+       <li>TP/TD Python - Master M1 BioInformatique: 19h</li>
+       <li>TP/TD Python - Master M1 Santé publique: 21h</li>
+     </ul></p>
+  <!-- End Teaching Section -->
+  </div>
+
+  <!-- Popularization Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="vulgarisation">
+    <h2 class="w3-text-light-grey">Sciences popularization</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h3 class="w3-text-light-grey">Participation at the 2019 edition of <a href="http://sciences-en-courts.fr/">Sciences en Cour[t]s</a> with <a href="https://fr.linkedin.com/in/nicolas-guillaudeux">Nicolas Guillaudeux</a></h3> 
+    <p>Sciences en Cour[t]s is a very short film festival for popular science. We win the public price for our film called "Me, my dog and the others: in search of lost transcripts". This video explains in a simplified way a part of Nicolas's thesis.</p>
+    <center>
+    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/kOVBoMquewQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    <br><br>
+    <h3 class="w3-text-light-grey">Organisation of the 2020 edition of Sciences en Cour[t]s</h3> 
+    <p>In addition to the 2019 participation, I take care, with Nicolas Guillaudeux and <a href="http://perso.eleves.ens-rennes.fr/people/Raphael.Truffet/">Raphael Truffet</a>, of the organization of the 2020 Sciences en cour[t]s festival. I notably made the poster for the 2020 year edition below.</p>
+       <center><img class="illus-gauche" src="img/SeC.jpg" alt="SeC" class="w3-image" width="40%" height="auto" /></center>
+  <!-- End Popularization Section -->
+  </div>
+
+  <!-- Sports Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="sports">
+    <h2 class="w3-text-light-grey">Little extra 1: sport skills</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <p class="w3-wide">Slackline (since 2016)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Climbing (since 2019)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="w3-wide">Parkour (from 2011 to 2015)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+    </div>
+    <p class="w3-wide">Soccer (from 2003 to 2013)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div><br>
+    <p class="w3-wide">Running (sometimes)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:30%"></div>
+    </div><br>
+  <!-- End Sports Section -->
+  </div>
+
+
+  <!-- Animals Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="animals">
+    <h2 class="w3-text-light-grey">Little extra 2: animal</h2>
+      <hr style="width:200px" class="w3-opacity">
+        <div class="texte-illustration">
+	  <img class="illus-gauche" src="img/Raven.jpg" alt="Raven" class="w3-image" width="35%" height="auto"/>
+       	  <p>I have a little bunny, this little beast is called Raven.</p>
+	  <p>Isn't he cute ?</p>
+	</div>
+  <!-- End Animals Section -->
+  </div>
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://team.inria.fr/genscale/">GenScale</a> Team, INRIA/Irisa – Campus de Beaulieu, 35042 RENNES Cedex – France</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: gregoire.siekaniec@inria.fr (recommended)</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="https://www6.rennes.inrae.fr/stlo/RECHERCHE/Equipes-de-recherche/Microbiologie-des-filieres-lait-et-oeuf">MicroBio</a> Team, INRAE – UMR STLO – AGROCAMPUS OUEST, 65 Rue de Saint-Brieuc, 35000 Rennes – France</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: gregoire.siekaniec@inrae.fr</p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://www.linkedin.com/in/gregoiresiekaniec/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
