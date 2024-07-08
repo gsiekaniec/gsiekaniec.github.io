@@ -36,6 +36,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     overflow: hidden; 
 }
 
+.contact-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.contact-info i {
+	margin-right: 10px;
+}
+.contact-info p {
+	margin: 0;
+}
+
+
 </style>
 <body class="w3-black">
 
@@ -106,7 +119,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">My projects</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>I am a bioinformatician who recently completed a post-doctorate on processing exomic data of metastatic breast cancer RH+/HER2-. I previously completed a Ph.D. in bacterial genomics to enable rapid identification of bacterial strains using the Oxford Nanopore MinION sequencer and focusing on the <i>Streptococcus thermophilus</i> species. My professional project is to work in genomics, transcriptomics, and/or metagenomics.
+    <p>
+    I am a bioinformatician currently working in the Algorithmic Bioinformatics team at Saarland University, focusing on the development of the second version of ORI, a bacterial strain identification software I initially developed during my thesis (see <a href="#git">below</a>). Previously, I completed a postdoctoral fellowship where I processed exomic data of metastatic RH+/HER2- breast cancer.<br>
+    During my Ph.D. I work in bacterial genomics on the rapid identification of bacterial strains using the Oxford Nanopore MinION sequencer, specifically targeting the species <i>Streptococcus thermophilus</i>.<br>
+    My professional goal is to advance in the fields of genomics, transcriptomics, and metagenomics.
     </p>
     <hr style="width:200px" class="w3-opacity">
     <p>For more details on my scientific and professional background you can download my resume: </p>
@@ -221,10 +237,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> </p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: gregoire.siekaniec@ico.unicancer.fr</p>
-    </div><br>
+   
+    <div class="contact-info">
+      <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+      <p>Algorithmische Bioinformatik<br>Center for Bioinformatics, Campus E2.1<br> Universität des Saarlandes<br> 66123 Saarbrücken, Germany</p>
+    </div>
+    <div class="contact-info">
+      <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> 
+      <p>Email: gregoire.siekaniec@uni-saarland.de</p>
+    </div>
 
   <!-- End Contact Section -->
   </div>
